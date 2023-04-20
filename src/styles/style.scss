@@ -1,0 +1,10 @@
+@import "fonts.scss";
+@import "variables.scss";
+@import "mixins.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Ubuntu;
+}

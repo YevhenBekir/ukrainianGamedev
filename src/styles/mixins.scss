@@ -1,0 +1,6 @@
+@import "variables.scss";
+
+@mixin unturned-element {
+  user-select: none;
+  pointer-events: none;
+}
