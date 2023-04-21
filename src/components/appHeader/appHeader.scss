@@ -1,9 +1,10 @@
 @import "../../styles/fonts.scss";
 @import "../../styles/mixins.scss";
+@import "../../styles/keyframes.scss";
 
 .header {
   width: 100%;
-  background-color: #000;
+  background-color: #fff;
   height: 500px;
   color: #fff;
   .menu {
@@ -24,33 +25,24 @@
     .snake {
       display: block;
       margin: 0 auto;
+      filter: invert(100%);
     }
     .gamedev-label {
       .ukraine {
-        color: yellow;
+        color: #0b12fa;
+        font-weight: 300;
         animation: fadeInOut 3s steps(1) infinite;
       }
       .straight-line {
         color: red;
         animation: fadeInOut 0.5s ease-in-out infinite;
       }
+      color: #000000;
       position: absolute;
       bottom: 0;
       right: 1px;
       font-family: "Roboto Mono";
       font-weight: 100;
     }
-  }
-}
-
-@keyframes fadeInOut {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
   }
 }

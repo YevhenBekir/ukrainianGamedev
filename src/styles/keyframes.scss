@@ -1,0 +1,26 @@
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-67%);
+  }
+  60% {
+    transform: translateX(-67%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

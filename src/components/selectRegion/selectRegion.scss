@@ -1,0 +1,29 @@
+@import "../../styles/mixins.scss";
+
+.select-title {
+  text-align: center;
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.map-regions-stats {
+  margin-top: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  .map {
+    position: relative;
+    .ua-map {
+      @include unturned-element;
+      width: 100%;
+    }
+  }
+  .vertical-line {
+    height: 300px;
+    width: 1px;
+    background-color: #000;
+    margin-left: 30px;
+  }
+}

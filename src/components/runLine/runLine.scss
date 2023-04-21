@@ -1,42 +1,22 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/keyframes.scss";
+
 .run_line {
+  @include unturned-element;
   text-align: right;
   white-space: nowrap;
   overflow: hidden;
   animation: marquee 25s linear infinite;
   .scale {
     animation: fadeInOut 2s steps(1) infinite;
+    color: #0b12fa;
   }
   .projects {
     animation: fadeInOut 1.7s steps(5) infinite;
+    color: #0b12fa;
   }
   .development {
     animation: fadeInOut 3s steps(3) infinite;
-  }
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  40% {
-    transform: translateX(-67%);
-  }
-  60% {
-    transform: translateX(-67%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeInOut {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
+    color: #0b12fa;
   }
 }
