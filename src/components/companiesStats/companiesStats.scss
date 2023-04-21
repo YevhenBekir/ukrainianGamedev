@@ -1,0 +1,23 @@
+.stats {
+  display: flex;
+  min-height: 500px;
+  justify-content: space-between;
+  align-items: center;
+  &-left-title {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-weight: 500;
+    font-size: 26px;
+  }
+  &-stats {
+    transform: translateY(1150%);
+  }
+  &-right-title {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    font-weight: 500;
+    font-size: 26px;
+  }
+}

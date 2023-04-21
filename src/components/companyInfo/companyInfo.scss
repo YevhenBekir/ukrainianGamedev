@@ -1,0 +1,78 @@
+.company {
+  background-color: #fcc7c3;
+  width: 100%;
+  min-height: 300px;
+  padding: 50px 150px;
+  margin-top: 50px;
+  box-shadow: 0px -25px 15px #fcc7c3;
+  opacity: 0.8;
+  &-carousel {
+    margin: 0 auto;
+    width: 700px;
+    height: 300px;
+    background-color: #ef98a7;
+    border-radius: 20px;
+  }
+  &-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    &-initials {
+      width: 600px;
+      &-name {
+        font-size: 23px;
+        font-weight: 500;
+      }
+      &-desc {
+        font-size: 18px;
+        font-weight: 300;
+        margin-top: 30px;
+      }
+    }
+    &-projects {
+      list-style: none;
+      text-align: right;
+      margin-top: 56px;
+      &-item {
+        font-family: "Roboto Mono";
+        font-weight: 500;
+        margin-top: 10px;
+      }
+      &-item::before {
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #be999f;
+        float: right;
+        margin-left: 5px;
+        transform: translateY(30%);
+      }
+      &-item:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+  &-details {
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+    &-link {
+      text-decoration: none;
+      color: black;
+      transition: 0.2s all;
+      font-style: italic;
+      font-weight: 100;
+    }
+    &-link:hover {
+      color: #5f4545;
+    }
+    &-employees {
+      font-weight: 100;
+      &-total {
+        font-weight: 500;
+      }
+    }
+  }
+}

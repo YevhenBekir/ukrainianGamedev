@@ -104,17 +104,17 @@ const SelectRegion = (props) => {
               size="31px"
             />
           </div>
-          {/*  */}
+          {/*selectors*/}
         </div>
         <div className="vertical-line"></div>
         <div className="info">
           <Infog />
           <div className="info-subtitle" style={{ textAlign: "center" }}>
-            співвідношення кількості співробітників
+            співвідношення кількості працівників
           </div>
         </div>
       </div>
-      {/* <AvailableCompanies data={data} /> */}
+      <AvailableCompanies data={null} />
     </>
   );
 };

@@ -1,7 +1,16 @@
 .companies-list {
   list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
   .companies-list-item {
     display: inline-block;
-    border-bottom: 3px #ef98a7 solid;
+    font-family: "Roboto";
+    cursor: pointer;
+    border-bottom: 5px #d9d9d9 solid;
+  }
+  .companies-list-item_active {
+    border-bottom: 5px #fcc7c3 solid;
+    cursor: pointer;
   }
 }

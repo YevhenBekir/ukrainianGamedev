@@ -3,6 +3,8 @@ import RunLine from "../runLine/RunLine";
 import AppHeader from "../appHeader/AppHeader";
 import AppBasement from "../appBasement/AppBasement";
 import SelectRegion from "../selectRegion/SelectRegion";
+import CompanyInfo from "../companyInfo/CompanyInfo";
+import CompaniesStats from "../companiesStats/CompaniesStats";
 
 import "../../styles/style.scss";
 
@@ -14,6 +16,8 @@ function App() {
       <div className="app-body">
         <SelectRegion />
       </div>
+      <CompanyInfo />
+      <CompaniesStats />
       <AppBasement />
     </div>
   );
