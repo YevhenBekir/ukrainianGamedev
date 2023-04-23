@@ -4,6 +4,7 @@ import useCompaniesRequest from "../../services/useCompaniesRequest";
 import AvailableCompanies from "./availableCompanies/AvailableCompanies";
 import Selector from "../selector/Selector";
 import Infog from "./pieInfo/PieInfo";
+import Spinner from "../spinner/Spinner";
 
 import ua from "../../assets/ua.svg";
 import "./selectRegion.scss";
@@ -11,12 +12,20 @@ import { companiesFetch } from "./regionSlice";
 
 const SelectRegion = (props) => {
   const dispatch = useDispatch();
-  const { getCompanies } = useCompaniesRequest();
-
   const { cityCompanies, companiesLoadingStatus, activeCompany } = useSelector(
     (state) => state.companies
   );
-  console.log(cityCompanies);
+
+  const visionCompaniesList = () => {
+    if (companiesLoadingStatus === "loading") {
+      return <Spinner />;
+    } else if (companiesLoadingStatus === "idle") {
+      return <AvailableCompanies cityCompanies={cityCompanies} />;
+    } else {
+      return <h5>Opps... Something went wrong 0_o</h5>;
+    }
+  };
+
   return (
     <>
       <div className="select-title">БУДЬ ЛАСКА, ОБЕРІТЬ РЕГІОН</div>
@@ -33,7 +42,7 @@ const SelectRegion = (props) => {
               id="kyiv"
               className="kyiv-selector"
               size="30px"
-              setCompaniesToState={(id) => dispatch(companiesFetch(id))}
+              onSetCitiesToState={(e) => dispatch(companiesFetch(e))}
             />
           </div>
           <div
@@ -45,7 +54,7 @@ const SelectRegion = (props) => {
               id="lviv"
               className="lviv-selector"
               size="39px"
-              setCompaniesToState={(id) => getCompanies(id)}
+              onSetCitiesToState={(e) => dispatch(companiesFetch(e))}
             />
           </div>
           <div
@@ -57,6 +66,7 @@ const SelectRegion = (props) => {
               id="rivne"
               className="rivne-selector"
               size="29px"
+              onSetCitiesToState={(e) => dispatch(companiesFetch(e))}
             />
           </div>
           <div
@@ -68,6 +78,7 @@ const SelectRegion = (props) => {
               id="kharkiv"
               className="kharkiv-selector"
               size="45px"
+              onSetCitiesToState={(e) => dispatch(companiesFetch(e))}
             />
           </div>
           <div
@@ -79,6 +90,7 @@ const SelectRegion = (props) => {
               id="dnipro"
               className="dnipro-selector"
               size="35px"
+              onSetCitiesToState={(e) => dispatch(companiesFetch(e))}
             />
           </div>
           <div
@@ -90,6 +102,7 @@ const SelectRegion = (props) => {
               id="odesa"
               className="odesa-selector"
               size="33px"
+              onSetCitiesToState={(e) => dispatch(companiesFetch(e))}
             />
           </div>
           <div
@@ -101,6 +114,7 @@ const SelectRegion = (props) => {
               id="vinnytsia"
               className="vinnytsia-selector"
               size="33px"
+              onSetCitiesToState={(e) => dispatch(companiesFetch(e))}
             />
           </div>
           <div
@@ -112,6 +126,7 @@ const SelectRegion = (props) => {
               id="frankivsk"
               className="frankivsk-selector"
               size="31px"
+              onSetCitiesToState={(e) => dispatch(companiesFetch(e))}
             />
           </div>
           {/*selectors*/}
@@ -124,7 +139,7 @@ const SelectRegion = (props) => {
           </div>
         </div>
       </div>
-      <AvailableCompanies />
+      {visionCompaniesList()}
     </>
   );
 };

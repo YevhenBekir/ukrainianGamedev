@@ -52,9 +52,4 @@ const regionSlice = createSlice({
 const { actions, reducer } = regionSlice;
 
 export default reducer;
-export const {
-  companiesFetching,
-  companiesFetched,
-  companiesFetchingError,
-  setActiveCompany,
-} = actions;
+export const { setActiveCompany } = actions;
