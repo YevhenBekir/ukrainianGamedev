@@ -1,9 +1,6 @@
 import "./selector.scss";
 
-const Selector = ({ id, className, size }) => {
-  const onLog = (e) => {
-    console.log(e);
-  };
+const Selector = ({ id, className, size, setCompaniesToState }) => {
   return (
     <div
       id={id}
@@ -12,7 +9,7 @@ const Selector = ({ id, className, size }) => {
         width: `${size ? size : null}`,
         height: `${size ? size : null}`,
       }}
-      onClick={(e) => onLog(e)}
+      onClick={(e) => setCompaniesToState(e.target.id)}
     ></div>
   );
 };

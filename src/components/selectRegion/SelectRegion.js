@@ -1,14 +1,22 @@
-import Selector from "../selector/Selector";
+import { useDispatch, useSelector } from "react-redux";
+import useCompaniesRequest from "../../services/useCompaniesRequest";
 
-import Infog from "./pieInfo/PieInfo";
 import AvailableCompanies from "./availableCompanies/AvailableCompanies";
+import Selector from "../selector/Selector";
+import Infog from "./pieInfo/PieInfo";
 
 import ua from "../../assets/ua.svg";
 import "./selectRegion.scss";
-
-// "http://localhost:3001/cityCompanies"
+import { companiesFetch } from "./regionSlice";
 
 const SelectRegion = (props) => {
+  const dispatch = useDispatch();
+  const { getCompanies } = useCompaniesRequest();
+
+  const { cityCompanies, companiesLoadingStatus, activeCompany } = useSelector(
+    (state) => state.companies
+  );
+  console.log(cityCompanies);
   return (
     <>
       <div className="select-title">БУДЬ ЛАСКА, ОБЕРІТЬ РЕГІОН</div>
@@ -25,6 +33,7 @@ const SelectRegion = (props) => {
               id="kyiv"
               className="kyiv-selector"
               size="30px"
+              setCompaniesToState={(id) => dispatch(companiesFetch(id))}
             />
           </div>
           <div
@@ -36,6 +45,7 @@ const SelectRegion = (props) => {
               id="lviv"
               className="lviv-selector"
               size="39px"
+              setCompaniesToState={(id) => getCompanies(id)}
             />
           </div>
           <div
@@ -114,7 +124,7 @@ const SelectRegion = (props) => {
           </div>
         </div>
       </div>
-      <AvailableCompanies data={null} />
+      <AvailableCompanies />
     </>
   );
 };
