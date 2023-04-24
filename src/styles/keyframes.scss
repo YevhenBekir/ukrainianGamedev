@@ -24,3 +24,15 @@
     transform: translateX(0%);
   }
 }
+
+@keyframes skeleton-animation {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #ef98a7;
+  }
+  100% {
+    background-color: transparent;
+  }
+}

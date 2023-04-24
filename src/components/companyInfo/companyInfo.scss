@@ -4,7 +4,7 @@
   min-height: 300px;
   padding: 50px 150px;
   margin-top: 50px;
-  box-shadow: 0px -25px 15px #fcc7c3;
+  box-shadow: 0px -25px 25px 15px #fcc7c3;
   opacity: 0.8;
   &-carousel {
     margin: 0 auto;
@@ -58,6 +58,7 @@
     display: flex;
     width: 600px;
     justify-content: space-between;
+    margin-top: 15px;
     &-link {
       text-decoration: none;
       color: black;

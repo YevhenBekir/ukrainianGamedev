@@ -1,3 +1,5 @@
+import { useSelector } from "react-redux";
+
 import React from "react";
 import RunLine from "../runLine/RunLine";
 import AppHeader from "../appHeader/AppHeader";
@@ -5,10 +7,13 @@ import AppBasement from "../appBasement/AppBasement";
 import SelectRegion from "../selectRegion/SelectRegion";
 import CompanyInfo from "../companyInfo/CompanyInfo";
 import CompaniesStats from "../companiesStats/CompaniesStats";
+import SkeletonCompanyCard from "../skeletonCompanyCard/SkeletonCompanyCard";
 
 import "../../styles/style.scss";
 
 function App() {
+  const { activeCompany } = useSelector((state) => state.companies);
+
   return (
     <div className="App">
       <RunLine />
@@ -16,7 +21,7 @@ function App() {
       <div className="app-body">
         <SelectRegion />
       </div>
-      <CompanyInfo />
+      {activeCompany.id ? <CompanyInfo /> : <SkeletonCompanyCard />}
       <CompaniesStats />
       <AppBasement />
     </div>

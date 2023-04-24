@@ -1,5 +1,5 @@
+import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import useCompaniesRequest from "../../services/useCompaniesRequest";
 
 import AvailableCompanies from "./availableCompanies/AvailableCompanies";
 import Selector from "../selector/Selector";
@@ -11,6 +11,8 @@ import "./selectRegion.scss";
 import { companiesFetch } from "./regionSlice";
 
 const SelectRegion = (props) => {
+  const [city, setCity] = useState("");
+
   const dispatch = useDispatch();
   const { cityCompanies, companiesLoadingStatus, activeCompany } = useSelector(
     (state) => state.companies
@@ -20,7 +22,7 @@ const SelectRegion = (props) => {
     if (companiesLoadingStatus === "loading") {
       return <Spinner />;
     } else if (companiesLoadingStatus === "idle") {
-      return <AvailableCompanies cityCompanies={cityCompanies} />;
+      return <AvailableCompanies />;
     } else {
       return <h5>Opps... Something went wrong 0_o</h5>;
     }
@@ -42,7 +44,8 @@ const SelectRegion = (props) => {
               id="kyiv"
               className="kyiv-selector"
               size="30px"
-              onSetCitiesToState={(e) => dispatch(companiesFetch(e))}
+              onSetCityCompaniesToState={(e) => dispatch(companiesFetch(e))}
+              onSetCityNameToInfographic={(e) => setCity(e)}
             />
           </div>
           <div
@@ -54,7 +57,8 @@ const SelectRegion = (props) => {
               id="lviv"
               className="lviv-selector"
               size="39px"
-              onSetCitiesToState={(e) => dispatch(companiesFetch(e))}
+              onSetCityCompaniesToState={(e) => dispatch(companiesFetch(e))}
+              onSetCityNameToInfographic={(e) => setCity(e)}
             />
           </div>
           <div
@@ -66,7 +70,8 @@ const SelectRegion = (props) => {
               id="rivne"
               className="rivne-selector"
               size="29px"
-              onSetCitiesToState={(e) => dispatch(companiesFetch(e))}
+              onSetCityCompaniesToState={(e) => dispatch(companiesFetch(e))}
+              onSetCityNameToInfographic={(e) => setCity(e)}
             />
           </div>
           <div
@@ -78,7 +83,8 @@ const SelectRegion = (props) => {
               id="kharkiv"
               className="kharkiv-selector"
               size="45px"
-              onSetCitiesToState={(e) => dispatch(companiesFetch(e))}
+              onSetCityCompaniesToState={(e) => dispatch(companiesFetch(e))}
+              onSetCityNameToInfographic={(e) => setCity(e)}
             />
           </div>
           <div
@@ -90,7 +96,8 @@ const SelectRegion = (props) => {
               id="dnipro"
               className="dnipro-selector"
               size="35px"
-              onSetCitiesToState={(e) => dispatch(companiesFetch(e))}
+              onSetCityCompaniesToState={(e) => dispatch(companiesFetch(e))}
+              onSetCityNameToInfographic={(e) => setCity(e)}
             />
           </div>
           <div
@@ -102,7 +109,8 @@ const SelectRegion = (props) => {
               id="odesa"
               className="odesa-selector"
               size="33px"
-              onSetCitiesToState={(e) => dispatch(companiesFetch(e))}
+              onSetCityCompaniesToState={(e) => dispatch(companiesFetch(e))}
+              onSetCityNameToInfographic={(e) => setCity(e)}
             />
           </div>
           <div
@@ -114,7 +122,8 @@ const SelectRegion = (props) => {
               id="vinnytsia"
               className="vinnytsia-selector"
               size="33px"
-              onSetCitiesToState={(e) => dispatch(companiesFetch(e))}
+              onSetCityCompaniesToState={(e) => dispatch(companiesFetch(e))}
+              onSetCityNameToInfographic={(e) => setCity(e)}
             />
           </div>
           <div
@@ -126,16 +135,19 @@ const SelectRegion = (props) => {
               id="frankivsk"
               className="frankivsk-selector"
               size="31px"
-              onSetCitiesToState={(e) => dispatch(companiesFetch(e))}
+              onSetCityCompaniesToState={(e) => dispatch(companiesFetch(e))}
+              onSetCityNameToInfographic={(e) => setCity(e)}
             />
           </div>
           {/*selectors*/}
         </div>
         <div className="vertical-line"></div>
         <div className="info">
-          <Infog />
+          <Infog cityCompanies={cityCompanies} />
           <div className="info-subtitle" style={{ textAlign: "center" }}>
-            співвідношення кількості працівників
+            {city
+              ? `співвідношення кількості працівників в ${city.toUpperCase()}`
+              : "ОБЕРІТЬ МІСТО"}
           </div>
         </div>
       </div>

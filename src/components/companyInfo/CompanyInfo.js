@@ -1,46 +1,61 @@
+import { useSelector } from "react-redux";
+import { nanoid } from "nanoid";
+
+import Spinner from "../spinner/Spinner";
+import SimpleSlider from "./slider/Slider";
+
 import "./companyInfo.scss";
 
 const CompanyInfo = (props) => {
-  const renderProjects = () => {
-    return;
+  const { activeCompany, companiesLoadingStatus } = useSelector(
+    (state) => state.companies
+  );
+  const { id, name, description, link, employees, projects } = activeCompany;
+
+  const renderProjects = (activeCompanyProjects) => {
+    if (!activeCompanyProjects) {
+      return;
+    }
+    const projects = activeCompanyProjects.map((item) => {
+      return (
+        <li className="company-info-projects-item" key={nanoid()}>
+          {item}
+        </li>
+      );
+    });
+    return <ul className="company-info-projects">{projects}</ul>;
   };
 
+  const visionRender = () => {
+    if (companiesLoadingStatus === "loading") {
+      return <Spinner />;
+    } else if (companiesLoadingStatus === "idle") {
+      return <SimpleSlider />;
+    } else {
+      return <h5>Oops, something went wrong 0_o</h5>;
+    }
+  };
+
+  const companyProjects = renderProjects(projects);
   return (
     <>
       <div className="company">
-        <div className="company-carousel"></div>
+        {visionRender()}
         <div className="company-info">
           <div className="company-info-initials">
-            <div className="company-info-initials-name">Rockstar Games</div>
-            <div className="company-info-initials-desc">
-              Rockstar Games - це відома американська компанія з виробництва
-              відеоігор, заснована у 1998 році. Компанія спеціалізується на
-              розробці та випуску ігор в жанрі action-adventure та шутерів.
-              Найбільш відомі їхні проекти - Grand Theft Auto, Max Payne, Bully,
-              L.A. Noire. Компанія має статус одного з лідерів галузі та відома
-              своїми інноваційними технологіями та високою якістю геймплею.
-            </div>
+            <div className="company-info-initials-name">{name}</div>
+            <div className="company-info-initials-desc">{description}</div>
           </div>
-          <ul className="company-info-projects">
-            <li className="company-info-projects-item">GTA</li>
-            <li className="company-info-projects-item">Max Payne</li>
-            <li className="company-info-projects-item">L.A. Noire</li>
-            <li className="company-info-projects-item">Bully</li>
-            <li className="company-info-projects-item">Table Tennis</li>
-          </ul>
+
+          {companyProjects}
         </div>
         <div className="company-details">
-          <a
-            href="https://www.rockstargames.com/"
-            target="_blank"
-            className="company-details-link"
-          >
-            https://www.rockstargames.com
+          <a href={link} target="_blank" className="company-details-link">
+            {link}
           </a>
           <div className="company-details-employees">
-            {" "}
-            Кількість працівників:{" "}
-            <span className="company-details-employees-total">300 000</span>
+            {employees ? "Кількість працівників:" : null}
+            <span className="company-details-employees-total">{employees}</span>
           </div>
         </div>
       </div>

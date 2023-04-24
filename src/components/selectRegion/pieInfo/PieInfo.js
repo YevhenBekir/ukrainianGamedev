@@ -1,10 +1,6 @@
 import React, { useCallback, useState } from "react";
+import { useSelector } from "react-redux";
 import { PieChart, Pie, Sector } from "recharts";
-
-const data = [
-  { name: "Ця компанія", value: 10 },
-  { name: "Решта", value: 90 },
-];
 
 const renderActiveShape = (props) => {
   const RADIAN = Math.PI / 180;
@@ -65,7 +61,7 @@ const renderActiveShape = (props) => {
         y={ey}
         textAnchor={textAnchor}
         fill="#333"
-      >{`${value} %`}</text>
+      >{`${value} п.`}</text>
       <text
         x={ex + (cos >= 0 ? 1 : -1) * 12}
         y={ey}
@@ -79,6 +75,34 @@ const renderActiveShape = (props) => {
 
 export default function Infog() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const { cityCompanies, activeCompany } = useSelector(
+    (state) => state.companies
+  );
+
+  const countEmployees = (cityCompanies) => {
+    const totalCount = cityCompanies.map((item) => item.employees);
+    return [
+      {
+        name: `Решта`,
+        value:
+          totalCount.length > 0
+            ? totalCount.reduce((acc, curr) => acc + curr) -
+              activeCompany.employees
+            : null,
+      },
+    ];
+  };
+  const totalEmp = countEmployees(cityCompanies);
+
+  const data = [
+    {
+      name: activeCompany.shortname,
+      value: activeCompany.employees,
+    },
+    ...totalEmp,
+  ];
+
+  // const data = countEmployees(cityCompanies);
   const onPieEnter = useCallback(
     (_, index) => {
       setActiveIndex(index);

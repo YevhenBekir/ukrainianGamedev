@@ -4,8 +4,9 @@
     {
       "id": 1,
       "cities": ["kyiv", "odesa"],
-      "link": "https://www.ubisoft.com/en-us/company/careers/locations/kyiv",
+      "link": "https://www.ubisoft.com/",
       "name": "Ubisoft",
+      "shortname": "Ubisoft",
       "description": "Дочірня студія французької компанії «Ubisoft», займається розробленням та портуванням франшиз Ubisoft на домашні комп’ютери, працювала над такими проектами AAA, як From Dust®, Driver® San Francisco, Assassin’s Creed® Revelations, Ghost Recon: Future Soldier®, Assassin’s Creed® 3 і Assassin’s Creed® IV Black Flag ™, Assassin's Creed® Rogue, Trials Fusion™. У 2014 році Ubisoft Kyiv одночасно випустила дві основні гри AAA для платформ ПК: Assassin’s Creed® Unity та Far Cry® 4. Серед останніх досягнень студії – версія Assassin’s Creed® Syndicate для ПК. Протягом останніх років команди також тісно співпрацювали зі студією Massive для постійної доставки та підтримки Uplay PC. Зараз Ubisoft Kyiv зосереджується на нових іграх класу AAA, тісно співпрацюючи з декількома студіями Ubisoft і використовуючи свій досвід у Tom Clancy’s Rainbow 6® Siege і Tom Clancy’s Ghost Recon®Wildlands, а також в інших неоголошених проектах. Дочірня студія французької компанії «Ubisoft» у місті Києві, Україна, що займається розробленням та портуванням відеоігор. Була заснована у квітні 2008 року. З того часу компанія долучалася до розроблення та портування багатьох проєктів холдингової компанії, зокрема брала участь у створенні відеоігор франшиз Assassin's Creed та Far Cry, та таких ігор як Watch Dogs 2, Tom Clancy's Ghost Recon Wildlands тощо.",
       "employees": 1175,
       "thumbnails": [
@@ -50,8 +51,9 @@
     {
       "id": 2,
       "cities": ["kyiv", "kharkiv", "lviv", "odesa"],
-      "link": "https://company.plarium.com/ua/",
+      "link": "https://company.plarium.com/",
       "name": "Plarium",
+      "shortname": "Plarium",
       "description": "Мобільні та компʼютерні ігри Plarium об’єднують понад 450 мільйонів людей у всьому світі. Портфоліо компанії включає понад 20 ігор – від хардкорних колекційних RPG до екшн-шутерів і казуальних головоломок. Співробітники працюють із львівського офісу або віддалено. Серед найвідоміших проєктів, створених за участі Plarium Ukraine, – Raid: Shadow Legends, Mech Arena та франшиза Stormfall. Українська команда також почала розробляти новий проєкт – мультиплатформний шутер від третьої особи. Ігри компанії доступні на iOS, Android і Plarium Play – оптимізованій платформі для PC та Mac. Facebook двічі визнавав Plarium кращим розробником хардкорних ігор, а наші проєкти регулярно отримують фічеринг від App Store та Google Play. Компанія була заснована 2009 року. У жовтні 2017-го стала дочірньою компанією австралійської групи Aristocrat. Поділяєте наше захоплення іграми та інноваціями? Надсилайте резюме й долучайтесь до команди. Ви можете працювати як в офісі компанії, так і віддалено.",
       "employees": 976,
       "thumbnails": [
@@ -94,8 +96,9 @@
     {
       "id": 3,
       "cities": ["kharkiv", "lviv"],
-      "link": "https://www.gameloft.com/gameloft-studios/lviv",
+      "link": "https://www.gameloft.com/",
       "name": "Gameloft",
+      "shortname": "Gameloft",
       "description": "Видавець і розробник відеоігор зі штаб-квартирою в Парижі та відділеннями в усьому світі. Компанія була заснована братами Гіємо, засновниками та власниками Ubisoft. Компанія створює ігри переважно для мобільних телефонів та інших пристроїв. Gameloft розробляє ігри для таких платформ, як Nintendo DS, Macintosh, PlayStation Portable, Wii, Xbox 360, Zeebo і для інших, включаючи iPhone, Android, Windows Mobile і bada (раніше для платформ Java ME, BREW та Symbian OS, а також N-Gage).",
       "employees": 600,
       "thumbnails": [
@@ -133,6 +136,7 @@
       "cities": ["lviv"],
       "link": "https://room8studio.com/",
       "name": "Room 8 Studio",
+      "shortname": "Room 8",
       "description": "Міжнародна аутсорсингова компанія з виробництва мистецтва та розробки ігор, яка надає послуги всьому світу. Студія співпрацює з глобальними видавцями, включаючи Activision, Nintendo, Ubisoft, Gameloft, EA, Xbox Game Studios та багато інших. Room 8 охоплює широкий спектр високоякісних рішень, від безкоштовних мобільних ігор і портування ігрових консолей до ігрового мистецтва AAA телебачення та анімації. Room 8 Studio - компнаія, яка залишила слід в таких іграх, як: Apex mobile, Monopoly, Flight simulator, Halo Infinite, Just Dance 2022, Age of Empires IV, Back4blood, Far Cry 6, New World, Rise of Cultures, Hitman Sniper 2, Cyberpunk 2077, Frostpoint, Call of Duty Cold War, Tom Clancy's Strike Force, Fall Guys, Fortnite, Star Wars Jedi: Fallen Order, Overwatch 2, Control, NFS: Heat, Mortal Kombat, Trailers Assassin's Creed, Jurassic World, The Crew 2, Hello Neighbor, Ark, Brawl Stars, Gwent, Paladins, Sims 4, Hearthstone, Call of Duty: Black Ops.",
       "employees": 550,
       "thumbnails": [
@@ -150,6 +154,7 @@
       "cities": ["kyiv"],
       "link": "https://www.gsc-game.com/",
       "name": "GSC Game World",
+      "shortname": "GSC",
       "description": "Українська приватна компанія, розробник комп'ютерних ігор, відома зокрема іграми серій «Козаки» та S.T.A.L.K.E.R. Заснована в 1995 році Сергієм Григоровичем, який є її керівником. Місце розташування компанії — Київ. З моменту свого заснування у 1995 р., компанія GSC Game World стала найвідомішою студією з розробки комп'ютерних ігор в Україні та зайняла одне з провідних місць в Європі. У 2004 році студія здобула свій перший досвід роботи з ліцензіями на голлівудські блокбастери. GSC Game World справді легендарна українська компанія, яка засіла в серцях мільйонів фанатів у всьому світі, зараз вона веде розробку над  S.T.A.L.K.E.R 2: Heart of Chornobyl. Нажаль кількість фотографій студії у вільному досить обмежена.",
       "employees": 500,
       "thumbnails": ["https://www.gsc-game.com/src/img/careers/banner_eng.jpg"],
@@ -183,6 +188,7 @@
       "cities": ["kyiv", "vinnytsia"],
       "link": "http://whaleapp.com/",
       "name": "WhaleApp LTD",
+      "shortname": "WhaleApp",
       "description": "Cвітовий видавець і розробник ігор, який об’єднує понад 60 мільйонів користувачів у світі. Портфоліо компанії включає кількість різноманітних ігор — від RPG до казуальних головоломок. На ринку WhaleApp працює з 2017 року та нараховує понад 450 співробітників, які створюють класні продукти у трьох студіях в Україні та у головному офісі в Ізраїлі.",
       "employees": 450,
       "thumbnails": [
@@ -206,6 +212,7 @@
       "cities": ["kyiv", "kharkiv"],
       "link": "https://ilogos.biz/",
       "name": "iLogos Game Studios",
+      "shortname": "iLogos",
       "description": "Міжнародна компанія із розробки комп'ютерних ігор та технологічних рішень для ігор. Серед створених ігор в iLogos — такі як Shadow Fight і Shadow Fight 2, аркада Vector, сітібілдер «Мегаполис». Брала участь у створенні понад 400 ігор. Компанія була заснована 2006 року в Луганську, згодом було відкрито офіси в Харкові, Кривому Розі, Дніпрі, Львові, Миколаєві та німецькому Гамбурзі. 2015 року відкрилась одеська філія. iLogos займається аутсорсинговою розробкою ігор для Electronic Arts, Disney, Nekki, Social Quantum та інших. 2012 року співзасновником, генеральним директором і CEO компанії iLogos Europe (згодом Co-Founder and Chairman iLogos) став Олександр Голдибін. 2014 року, із початком АТО, керівництво запропонувало співробітникам переїхати в інші офіси компанії. Офіс розробки було перенесено до Києва, штаб-квартира знаходиться в Гамбурзі.",
       "employees": 250,
       "thumbnails": [
@@ -228,8 +235,9 @@
     {
       "id": 8,
       "cities": ["kyiv"],
-      "link": "https://www.4a-games.com.mt/",
+      "link": "https://www.4a-games.com.ua/",
       "name": "4A Games",
+      "shortname": "4A Games",
       "description": "Українсько-мальтійська компанія-розробник відеоігор. Відома головним чином завдяки постапокаліптичній серії «Metro», перша частина котрої, «Metro 2033», була випущена в 2010 році. У 2014 частина колективу змінила місце дислокації на Мальту. Компанія була створена в Києві, Україна. Її заснували вихідці з ігрової студії GSC Game World за рік до того, як ті випустили гру S.T.A.L.K.E.R.: Shadow of Chernobyl Андрієм Прохоровим, Олесем Шишковцовим, Олександром Максимчуком та Андрієм Ткаченком. Прохоров особисто прикладав руку, як головний керівник проекту.",
       "employees": 232,
       "thumbnails": [
@@ -252,8 +260,9 @@
     {
       "id": 9,
       "cities": ["kyiv"],
-      "link": "https://www.gen.tech/career",
+      "link": "https://www.gen.tech/",
       "name": "Genesis",
+      "shortname": "Genesis",
       "description": "Українська кофаундингова ІТ-компанія,що будує глобальні технологічні бізнеси разом із найкращими підприємцями Центральної та Східної Європи. Один із найбільших паблішерів застосунків на глобальному ринку. Геймдев-стартапи компанії займаються розробкою мобільних ігор. Серед найуспішніших — SUITSME, Keiki World, Factory Empire, MyFantasy, Solitaire Voyage",
       "employees": 230,
       "thumbnails": [
@@ -271,6 +280,7 @@
       "cities": ["kyiv"],
       "link": "https://fraglab.com/",
       "name": "Frag Lab",
+      "shortname": "Frag Lab",
       "description": "Cтудія розробки відеоігор у Києві, Україна. Компанія зосереджена на наступному поколінні AAA безкоштовної гри в FPS Shatterline. Працівники студії присвятили своє життя створенню чудових ігор для різних аудиторій. Їх кінцева мета — реалізувати бачення, засноване на їх досвіді та успіху однієї з найкращих безкоштовних ігор FPS, розроблених у Східній Європі. Виробнича філософія компінії базується на децентралізованому підході з метою максимального залучення команди до творчого процесу та прийняття рішень.",
       "employees": 220,
       "thumbnails": [
@@ -288,6 +298,7 @@
       "cities": ["kyiv", "kharkiv", "lviv", "dnipro"],
       "link": "https://pinglestudio.com/",
       "name": "Pingle Studio",
+      "shortname": "Pingle",
       "description": "Pingle Studio є глобальним партнером з розробки ігор. Вони допомагають творцям і видавцям ігор з усього світу втілити в життя свої ігри, отримувати більше доходу та запобігати збоям. Студія пропонує свій досвід у перенесенні, розробці повного циклу ігор, спільному розробленні, мистецьких та анімаційних послугах і тестуванні ігор. З моменту заснування в 2007 році вони встановили міцне партнерство з Epic Games, Square Enix, Qualcomm, tinyBuild, Revolution Software, Egosoft та багатьма іншими лідерами галузі.",
       "employees": 200,
       "thumbnails": [
@@ -305,15 +316,10 @@
     },
     {
       "id": 12,
-      "cities": [
-        "kyiv",
-        "frankivsk",
-        "vinnytsia",
-        "lviv",
-        "dnipro"
-      ],
+      "cities": ["kyiv", "frankivsk", "vinnytsia", "lviv", "dnipro"],
       "link": "https://careers.n-ix.com/",
       "name": "N-iX",
+      "shortname": "N-iX",
       "description": "N-iX Game & VR Studio надають послуги з повного циклу розробки мобільних та ПК ігор. Наступна ціль – розробка консольних ігор. Також студія спеціалізується на високотехнологічних VR-проєктах для стартапів і великих бізнесів.",
       "employees": 196,
       "thumbnails": [
@@ -334,6 +340,7 @@
       "cities": ["kyiv"],
       "link": "https://kevurugames.com/",
       "name": "Kevuru Games",
+      "shortname": "Kevuru",
       "description": "Компанія співпрацює за такими клієнтами як Epic Games, Electronic Arts, Bandai Namco, Goodgame Studios, Techona, Foxnet Games, Ultrabit, Say Games, Ione Games. Попрацювала над такими тайтлами, як Fortnite, Star Wars, Iron Order, Taboo Stories...",
       "employees": 192,
       "thumbnails": [
@@ -350,6 +357,7 @@
       "cities": ["kyiv"],
       "link": "https://aaagameartstudio.com/",
       "name": "AAA Game Art Studio",
+      "shortname": "AAA Game Art",
       "description": "Компанія займається артаутсорсом, 80% всіх співробітників — 2D та 3D-художники і аніматори. Студія взяла участь у розробці понад 60 великих проєктів, в тому числі Gardenscapes. Покриває повний цикл артпродакшена для всіх жанрів казуальних ігор.",
       "employees": 168,
       "thumbnails": [
@@ -362,6 +370,7 @@
       "cities": ["kyiv", "lviv", "kharkiv"],
       "link": "https://www.moonactive.com/",
       "name": "Moon Active",
+      "shortname": "Moon Active",
       "description": "Moon Active — одна з провідних у світі компаній, що займаються розробкою мобільних ігор. Студія виробляє найцікавіші розваги найвищої якості, якими насолоджуються мільйони гравців у всьому всесвіті. Їх провідна гра Coin Master увійшла до 3 найкращих додатків у світі, а їх ігри мають понад 250 мільйонів завантажень і мільйони активних користувачів щодня. Від серверних служб до конвеєрів даних, що працюють у великому масштабі, обробляючи терабайти даних на день, обслуговуючи мільйони запитів за хвилину, до оптимізації високоякісної графіки в Unity, компанія ніколи не йде на компроміс із якістю, щоб надати їх гравцям найкращий ігровий досвід.",
       "employees": 153,
       "thumbnails": [
@@ -376,7 +385,7 @@
         "MyCafe",
         "Pet Master",
         "Zen Match",
-        "Coin master"
+        "Coin Master"
       ]
     },
     {
@@ -384,6 +393,7 @@
       "cities": ["kyiv", "dnipro", "rivne"],
       "link": "https://ab-games.com/",
       "name": "AB Games",
+      "shortname": "AB Games",
       "description": "Розробляє мобільні free-to-play ігри. Головний продукт — Hidden City, в неї щодня грають понад мільйон користувачів з 200 країн світу, гра переведена на 13 мов. У США вона увійшла в ТОП-3 за доходами в жанрі Adventure, а в Японії зайняла 1 місце серед пазлів. В розробці ще дві нові гри.",
       "employees": 152,
       "thumbnails": [
@@ -398,8 +408,9 @@
     {
       "id": 17,
       "cities": ["lviv"],
-      "link": "https://stepico.com/careers/",
+      "link": "https://stepico.com/",
       "name": "Stepico Games",
+      "shortname": "Stepico",
       "description": "Компанія спеціалізується на мобільних free-to-play іграх, а також Play2Earn проєктах. Серед успішних: MMA Manager і Century Siege.",
       "employees": 135,
       "thumbnails": [
@@ -427,6 +438,7 @@
       "cities": ["kyiv"],
       "link": "https://dragonslake.com/",
       "name": "Dragon’s Lake Entertainment",
+      "shortname": "Dragon’s Lake",
       "description": "Компанія належить до холдингу Room 8 Group і спеціалізується на АА+/ААА іграх для консолей та ПК. Серед найуспішніших проєктів Outriders (co-development); Bulletstorm, Indivisible, We Happy Few та інші.",
       "employees": 130,
       "thumbnails": [
@@ -452,6 +464,7 @@
       "cities": ["dnipro"],
       "link": "https://www.smartproject.com/",
       "name": "Smart Project",
+      "shortname": "Smart Project",
       "description": "Smart Project — провідний продуктовий бренд із повним циклом розробки. З моменту заснування займається створенням ігор для соціальних та мобільних платформ. На даний момент на їх рахунку понад 30 реалізованих проектів. Аудиторія — понад 100 мільйонів осіб, більше ніж 500 тисяч гравців щодня. Сьогодні вектор компанії неухильно спрямований на світовий ринок мобільних платформ. Продовжується реалізація та запуск нових багатообіцяючих та цікавих проектів. Приділяючи велику увагу унікальності графіки та запитам наших користувачів, вони щодня намагаються вдосконалювати якість своїх продуктiв та виводити їх на новий рівень.",
       "employees": 100,
       "thumbnails": [
@@ -477,6 +490,7 @@
       "cities": ["kyiv"],
       "link": "https://frogwares.com/",
       "name": "Frogwares",
+      "shortname": "Frogwares",
       "description": "Frogwares — незалежна українська компанія із головним офісом у Києві, яка займається розробкою відеоігор переважно жанру квест. Має дочірні студії в Дубліні, Ірландія, зокрема має київський підрозділ Waterlily Games, який займається розробкою казуальних відеоігор та видавництвом інших проєктів.",
       "employees": 100,
       "thumbnails": [
@@ -495,8 +509,9 @@
     {
       "id": 21,
       "cities": ["kyiv"],
-      "link": "https://gunzillagames.com/en/",
+      "link": "https://gunzillagames.com/",
       "name": "Gunzilla Games",
+      "shortname": "Gunzilla",
       "description": "Компанія залучила $25 мільйонів інвестицій, щоб створити багатокористувацький ААА-шутер нового покоління. До створення проєкту розробники залучили також режисера Ніла Бломкампа, який прославився фільмом 'Район № 9', і автора роману 'Видозмінений вуглець' Річарда Моргана. Ґрунтуючись на прагненні до інновацій, вони руйнують технологічні кордони в пошуках глибоко захоплюючого досвіду наступного покоління. Їх команда володіє багатими перевіреними знаннями з усіх куточків ігрової індустрії. Окрім розвитку навичок і знань для створення надзвичайно успішних ігор, кожен у Gunzilla має пристрасть до просування досвіду гравців вперед - це живить їх проєкти і поточну роботу навколо них.",
       "employees": 80,
       "thumbnails": [
@@ -509,8 +524,9 @@
     {
       "id": 22,
       "cities": ["kyiv"],
-      "link": "https://paga.group/uk/",
+      "link": "https://paga.group/",
       "name": "PAGA GROUP",
+      "shortname": "PAGA GROUP",
       "description": "Одна з провідних українських компаній з розробки ігор. Їх місія – створювати ігри, допомагаючи людям фантазувати та мріяти. PAGA GROUP як компанія цінує і поважає індивідуальність кожного, та дає можливість для реалізації та розвитку свого потенціалу.",
       "employees": 45,
       "thumbnails": [
@@ -530,6 +546,7 @@
       "cities": ["kyiv"],
       "link": "https://mirowin.com/",
       "name": "MiroWin Studio",
+      "shortname": "MiroWin",
       "description": "MiroWin — це українська студія віртуальної реальності, яка зосереджена на розробці пов’язаних VR-досвідів із інтерактивністю та інтуїтивною грою. У MiroWin розглядають ігри як форму мистецтва, і не просто хочуть зробити ігри більш захоплюючими, а прагнуть зробити їх більш людяними. Їх місія полягає в тому, щоб розширити людський досвід і розкрити свій творчий потенціал за допомогою віртуальної реальності.",
       "employees": 34,
       "thumbnails": [

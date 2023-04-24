@@ -19,16 +19,6 @@ const regionSlice = createSlice({
   name: "companies",
   initialState,
   reducers: {
-    // companiesFetching: (state) => {
-    //   state.companiesLoadingStatus = "loading";
-    // },
-    // companiesFetched: (state, action) => {
-    //   state.companiesLoadingStatus = "idle";
-    //   state.cityCompanies = action.payload;
-    // },
-    // companiesFetchingError: (state) => {
-    //   state.companiesLoadingStatus = "error";
-    // },
     setActiveCompany: (state, action) => {
       state.companiesLoadingStatus = "idle";
       state.activeCompany = action.payload;
@@ -42,6 +32,7 @@ const regionSlice = createSlice({
       .addCase(companiesFetch.fulfilled, (state, action) => {
         state.companiesLoadingStatus = "idle";
         state.cityCompanies = action.payload;
+        state.activeCompany = action.payload[0];
       })
       .addCase(companiesFetch.rejected, (state) => {
         state.companiesLoadingStatus = "error";

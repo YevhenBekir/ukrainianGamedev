@@ -1,6 +1,16 @@
 import "./selector.scss";
 
-const Selector = ({ id, className, size, onSetCitiesToState }) => {
+const Selector = ({
+  id,
+  className,
+  size,
+  onSetCityCompaniesToState,
+  onSetCityNameToInfographic,
+}) => {
+  const setAction = (id) => {
+    onSetCityCompaniesToState(id);
+    onSetCityNameToInfographic(id);
+  };
   return (
     <div
       id={id}
@@ -9,7 +19,7 @@ const Selector = ({ id, className, size, onSetCitiesToState }) => {
         width: `${size ? size : null}`,
         height: `${size ? size : null}`,
       }}
-      onClick={(e) => onSetCitiesToState(e.target.id)}
+      onClick={(e) => setAction(e.target.id)}
     ></div>
   );
 };

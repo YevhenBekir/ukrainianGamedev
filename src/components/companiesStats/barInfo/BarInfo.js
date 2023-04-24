@@ -1,4 +1,9 @@
 import React from "react";
+import { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+
+import { allCompaniesFetch } from "../infoSlice";
+
 import {
   BarChart,
   Bar,
@@ -9,50 +14,33 @@ import {
   Legend,
 } from "recharts";
 
-const data = [
-  {
-    name: "EA Games",
-    uv: 4000,
-    "кількість працівників": 2400,
-    amt: 2400,
-  },
-  {
-    name: "Activision",
-    uv: 3000,
-    "кількість працівників": 1398,
-    amt: 2210,
-  },
-  {
-    name: "Rockstar",
-    uv: 2000,
-    "кількість працівників": 9800,
-    amt: 2290,
-  },
-  {
-    name: "GSC Gameworld",
-    uv: 2780,
-    "кількість працівників": 9008,
-    amt: 2000,
-  },
-  {
-    name: "Ubisoft",
-    uv: 1890,
-    "кількість працівників": 4800,
-    amt: 2181,
-  },
-  {
-    name: "Naughty Dog",
-    uv: 3490,
-    "кількість працівників": 4300,
-    amt: 2100,
-  },
-];
-
 export default function BarInfo() {
+  const dispatch = useDispatch();
+  const { allCityCompanies } = useSelector((state) => state.infographic);
+
+  useEffect(() => {
+    dispatch(allCompaniesFetch());
+  }, []);
+
+  const getBarInfographic = (allComp) => {
+    if (!allComp) {
+      return;
+    }
+    const data = allComp.map((item) => {
+      return {
+        name: item.name,
+        "кількість працівників": item.employees,
+      };
+    });
+    return data;
+  };
+
+  const data = getBarInfographic(allCityCompanies);
+
   return (
     <BarChart
-      width={900}
-      height={300}
+      width={1100}
+      height={400}
       data={data}
       margin={{
         top: 5,

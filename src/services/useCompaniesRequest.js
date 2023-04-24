@@ -15,7 +15,6 @@ const useCompaniesRequest = () => {
         return item;
       }
     });
-    console.log(cityCompanies);
     return cityCompanies;
   };
 

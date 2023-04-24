@@ -4,9 +4,11 @@ import { setActiveCompany } from "../regionSlice";
 
 import "./availableCompanies.scss";
 
-const AvailableCompanies = ({ cityCompanies }) => {
+const AvailableCompanies = () => {
   const dispatch = useDispatch();
-  const { activeCompany } = useSelector((state) => state.companies);
+  const { activeCompany, cityCompanies } = useSelector(
+    (state) => state.companies
+  );
 
   const renderCompanies = (arr) => {
     return arr.map((item) => {
@@ -15,9 +17,11 @@ const AvailableCompanies = ({ cityCompanies }) => {
       return (
         <li
           key={item.id}
-          className={item.name === activeCompany ? `${clazz}${active}` : clazz}
+          className={
+            item.name === activeCompany.name ? `${clazz}${active}` : clazz
+          }
           style={{ marginLeft: cityCompanies.length > 10 ? "25px" : null }}
-          onClick={() => dispatch(setActiveCompany(item.name))}
+          onClick={() => dispatch(setActiveCompany(item))}
         >
           {item.name}
         </li>
