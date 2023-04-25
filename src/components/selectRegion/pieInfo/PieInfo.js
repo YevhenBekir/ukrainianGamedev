@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import { PieChart, Pie, Sector } from "recharts";
 
@@ -75,9 +75,22 @@ const renderActiveShape = (props) => {
 
 export default function Infog() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [widthSize, setWidthSize] = useState(0);
   const { cityCompanies, activeCompany } = useSelector(
     (state) => state.companies
   );
+
+  useEffect(() => {
+    function handleResize() {
+      setWidthSize(window.innerWidth);
+    }
+
+    window.addEventListener("resize", handleResize);
+
+    handleResize();
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const countEmployees = (cityCompanies) => {
     const totalCount = cityCompanies.map((item) => item.employees);
@@ -102,7 +115,18 @@ export default function Infog() {
     ...totalEmp,
   ];
 
-  // const data = countEmployees(cityCompanies);
+  const sizeCondition = () => {
+    if (widthSize >= 1300) return 400;
+    else if (widthSize >= 1200) return 350;
+    else if (widthSize >= 1100) return 300;
+    else if (widthSize >= 1000) return 250;
+    else if (widthSize >= 900) return 200;
+    else if (widthSize >= 800) return 150;
+    else if (widthSize >= 700) return 100;
+    else if (widthSize >= 600) return 50;
+    else if (widthSize >= 400) return 50;
+  };
+
   const onPieEnter = useCallback(
     (_, index) => {
       setActiveIndex(index);
@@ -111,7 +135,7 @@ export default function Infog() {
   );
 
   return (
-    <PieChart width={400} height={400}>
+    <PieChart width={sizeCondition()} height={sizeCondition()}>
       <Pie
         activeIndex={activeIndex}
         activeShape={renderActiveShape}

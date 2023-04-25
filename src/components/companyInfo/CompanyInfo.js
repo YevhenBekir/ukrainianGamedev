@@ -50,11 +50,11 @@ const CompanyInfo = (props) => {
           {companyProjects}
         </div>
         <div className="company-details">
-          <a href={link} target="_blank" className="company-details-link">
+          <a href={link} className="company-details-link">
             {link}
           </a>
           <div className="company-details-employees">
-            {employees ? "Кількість працівників:" : null}
+            {employees ? "Кількість працівників: " : null}
             <span className="company-details-employees-total">{employees}</span>
           </div>
         </div>
