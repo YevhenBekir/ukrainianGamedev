@@ -4,9 +4,9 @@ const RunLine = () => {
   return (
     <div className="run_line">
       Українські геймдев компанії:
-      <span className="scale"> масштаб</span>,
-      <span className="projects"> проєкти</span>,
-      <span className="development"> розвиток</span>...
+      <span className="run_line-scale"> масштаб</span>,
+      <span className="run_line-projects"> проєкти</span>,
+      <span className="run_line-development"> розвиток</span>...
     </div>
   );
 };

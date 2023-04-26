@@ -51,15 +51,16 @@ export default function BarInfo() {
   const data = getBarInfographic(allCityCompanies);
 
   const sizeCondition = () => {
-    if (widthSize >= 1300) return 1100;
-    else if (widthSize >= 1200) return 1000;
+    if (widthSize >= 1200) return 1100;
     else if (widthSize >= 1100) return 1000;
     else if (widthSize >= 1000) return 900;
     else if (widthSize >= 900) return 800;
     else if (widthSize >= 800) return 700;
     else if (widthSize >= 700) return 600;
     else if (widthSize >= 600) return 500;
+    else if (widthSize >= 500) return 400;
     else if (widthSize >= 400) return 300;
+    else if (widthSize < 400) return 200;
   };
 
   return (

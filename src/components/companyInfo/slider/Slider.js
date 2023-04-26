@@ -27,7 +27,7 @@ const SimpleSlider = () => {
     return img.map((item) => {
       return (
         <div className="slider" key={nanoid()}>
-          <img src={item} className="slide" alt="" />
+          <img src={item} className="slider-slide" alt="" />
         </div>
       );
     });

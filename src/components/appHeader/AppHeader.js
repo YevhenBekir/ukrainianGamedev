@@ -3,15 +3,20 @@ import "./appHeader.scss";
 const AppHeader = () => {
   return (
     <div className="header">
-      <div className="greetings">
+      <div className="header-greetings">
         <img
-          className="snake"
+          className="header-greetings-snake"
           src="https://thumbs.gfycat.com/UnfoldedTameAntipodesgreenparakeet-max-1mb.gif"
           alt="snake.gif"
         />
-        <div className="gamedev-label">
-          <span className="ukraine">Ukraine</span>://gamedev_companies:...
-          <span className="straight-line">|</span>
+        <div className="header-greetings-gamedev_label">
+          <span className="header-greetings-gamedev_label-ukraine">
+            Ukraine
+          </span>
+          ://gamedev_companies:...
+          <span className="header-greetings-gamedev_label-straight_line">
+            |
+          </span>
         </div>
       </div>
     </div>

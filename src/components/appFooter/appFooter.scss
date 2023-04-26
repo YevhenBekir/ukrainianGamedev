@@ -1,0 +1,21 @@
+.footer {
+  background-color: #00000081;
+  width: 100%;
+  &-copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-title {
+      text-align: center;
+      color: white;
+      font-family: "Roboto";
+      font-weight: 100;
+      font-size: 13px;
+      text-shadow: 1px 1px 3px black;
+    }
+    &-social_me {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

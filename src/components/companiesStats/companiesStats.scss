@@ -3,7 +3,7 @@
   min-height: 500px;
   justify-content: space-between;
   align-items: center;
-  &-left-title {
+  &-left_title {
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -13,11 +13,36 @@
   &-stats {
     transform: translateY(1150%);
   }
-  &-right-title {
+  &-right_title {
     display: flex;
     flex-direction: column;
     text-align: right;
     font-weight: 500;
     font-size: 26px;
+  }
+}
+
+@media (max-width: 650px) {
+  .stats-left_title {
+    font-size: 23px;
+  }
+  .stats-right_title {
+    font-size: 23px;
+  }
+}
+@media (max-width: 500px) {
+  .stats-left_title {
+    font-size: 18px;
+  }
+  .stats-right_title {
+    font-size: 18px;
+  }
+}
+@media (max-width: 400px) {
+  .stats-left_title {
+    font-size: 16px;
+  }
+  .stats-right_title {
+    font-size: 16px;
   }
 }

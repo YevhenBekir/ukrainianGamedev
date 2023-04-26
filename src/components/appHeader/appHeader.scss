@@ -7,33 +7,23 @@
   background-color: #fff;
   height: 500px;
   color: #fff;
-  .menu {
-    width: inherit;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .greetings {
+  &-greetings {
     @include unturned-element;
     position: relative;
     height: 500px;
     padding-top: 80px;
-    .gamedev-title {
-      text-align: center;
-    }
-    .snake {
+    &-snake {
       display: block;
       margin: 0 auto;
       filter: invert(100%);
     }
-    .gamedev-label {
-      .ukraine {
+    &-gamedev_label {
+      &-ukraine {
         color: #0b12fa;
         font-weight: 300;
         animation: fadeInOut 3s steps(1) infinite;
       }
-      .straight-line {
+      &-straight_line {
         color: red;
         animation: fadeInOut 0.5s ease-in-out infinite;
       }

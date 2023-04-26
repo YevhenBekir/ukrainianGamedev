@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 import AvailableCompanies from "./availableCompanies/AvailableCompanies";
@@ -12,11 +12,56 @@ import { companiesFetch } from "./regionSlice";
 
 const SelectRegion = (props) => {
   const [city, setCity] = useState("");
+  const [widthSize, setWidthSize] = useState(0);
 
   const dispatch = useDispatch();
   const { cityCompanies, companiesLoadingStatus, activeCompany } = useSelector(
     (state) => state.companies
   );
+
+  useEffect(() => {
+    function handleResize() {
+      setWidthSize(window.innerWidth);
+    }
+
+    window.addEventListener("resize", handleResize);
+
+    handleResize();
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const selectCityTrigger = () => {
+    if (city) {
+      return `співвідношення кількості працівників в ${city.toUpperCase()}`;
+    }
+    return (
+      <div className="select-city">
+        <div className="arrow">←</div>
+        <div className="title">ОБЕРІТЬ МІСТО</div>
+      </div>
+    );
+  };
+
+  const renderInfog = () => {
+    if (widthSize <= 1200) {
+      return;
+    }
+    return (
+      <>
+        <div className="map_regions_stats-vertical_line"></div>
+        <div className="map_regions_stats-info">
+          <Infog cityCompanies={cityCompanies} />
+          <div
+            className="map_regions_stats-info-subtitle"
+            style={{ textAlign: "center" }}
+          >
+            {selectCityTrigger()}
+          </div>
+        </div>
+      </>
+    );
+  };
 
   const visionCompaniesList = () => {
     if (companiesLoadingStatus === "loading") {
@@ -31,14 +76,15 @@ const SelectRegion = (props) => {
   return (
     <>
       <div className="select-title">БУДЬ ЛАСКА, ОБЕРІТЬ РЕГІОН</div>
-      <div className="map-regions-stats">
-        <div className="map">
-          <img className="ua-map" src={ua} alt="ua_map.svg" />
+      <div className="map_regions_stats">
+        <div className="map_regions_stats-map">
+          <img
+            className="map_regions_stats-map-ua_map"
+            src={ua}
+            alt="ua_map.svg"
+          />
           {/*selectors*/}
-          <div
-            className="kyiv-selector"
-            style={{ position: "absolute", top: "23%", left: "45%" }}
-          >
+          <div className="kyiv-selector">
             <Selector
               key="kyiv"
               id="kyiv"
@@ -48,10 +94,7 @@ const SelectRegion = (props) => {
               onSetCityNameToInfographic={(e) => setCity(e)}
             />
           </div>
-          <div
-            className="lviv-selector"
-            style={{ position: "absolute", top: "31%", left: "8%" }}
-          >
+          <div className="lviv-selector">
             <Selector
               key="lviv"
               id="lviv"
@@ -61,10 +104,7 @@ const SelectRegion = (props) => {
               onSetCityNameToInfographic={(e) => setCity(e)}
             />
           </div>
-          <div
-            className="rivne-selector"
-            style={{ position: "absolute", top: "21%", left: "21%" }}
-          >
+          <div className="rivne-selector">
             <Selector
               key="rivne"
               id="rivne"
@@ -74,10 +114,7 @@ const SelectRegion = (props) => {
               onSetCityNameToInfographic={(e) => setCity(e)}
             />
           </div>
-          <div
-            className="kharkiv-selector"
-            style={{ position: "absolute", top: "33%", left: "77%" }}
-          >
+          <div className="kharkiv-selector">
             <Selector
               key="kharkiv"
               id="kharkiv"
@@ -87,10 +124,7 @@ const SelectRegion = (props) => {
               onSetCityNameToInfographic={(e) => setCity(e)}
             />
           </div>
-          <div
-            className="dnipro-selector"
-            style={{ position: "absolute", top: "49%", left: "69%" }}
-          >
+          <div className="dnipro-selector">
             <Selector
               key="dnipro"
               id="dnipro"
@@ -100,10 +134,7 @@ const SelectRegion = (props) => {
               onSetCityNameToInfographic={(e) => setCity(e)}
             />
           </div>
-          <div
-            className="odesa-selector"
-            style={{ position: "absolute", top: "70%", left: "45%" }}
-          >
+          <div className="odesa-selector">
             <Selector
               key="odesa"
               id="odesa"
@@ -113,10 +144,7 @@ const SelectRegion = (props) => {
               onSetCityNameToInfographic={(e) => setCity(e)}
             />
           </div>
-          <div
-            className="vinnytsia-selector"
-            style={{ position: "absolute", top: "41.7%", left: "36.7%" }}
-          >
+          <div className="vinnytsia-selector">
             <Selector
               key="vinnytsia"
               id="vinnytsia"
@@ -126,10 +154,7 @@ const SelectRegion = (props) => {
               onSetCityNameToInfographic={(e) => setCity(e)}
             />
           </div>
-          <div
-            className="frankivsk-selector"
-            style={{ position: "absolute", top: "41%", left: "11.7%" }}
-          >
+          <div className="frankivsk-selector">
             <Selector
               key="frankivsk"
               id="frankivsk"
@@ -141,15 +166,7 @@ const SelectRegion = (props) => {
           </div>
           {/*selectors*/}
         </div>
-        <div className="vertical-line"></div>
-        <div className="info">
-          <Infog cityCompanies={cityCompanies} />
-          <div className="info-subtitle" style={{ textAlign: "center" }}>
-            {city
-              ? `співвідношення кількості працівників в ${city.toUpperCase()}`
-              : "ОБЕРІТЬ МІСТО"}
-          </div>
-        </div>
+        {renderInfog()}
       </div>
       {visionCompaniesList()}
     </>
