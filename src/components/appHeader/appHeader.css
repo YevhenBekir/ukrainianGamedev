@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  40% {
+    transform: translateX(-100%);
+  }
+  60% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes skeleton-animation {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #ef98a7;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+.header {
+  width: 100%;
+  background-color: #fff;
+  height: 500px;
+  color: #fff;
+}
+.header-greetings {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  position: relative;
+  height: 500px;
+  padding-top: 80px;
+}
+.header-greetings-snake {
+  display: block;
+  margin: 0 auto;
+  filter: invert(100%);
+}
+.header-greetings-gamedev_label {
+  color: #000000;
+  position: absolute;
+  bottom: 0;
+  right: 1px;
+  font-family: "Roboto Mono";
+  font-weight: 100;
+}
+.header-greetings-gamedev_label-ukraine {
+  color: #0b12fa;
+  font-weight: 300;
+  animation: fadeInOut 3s steps(1) infinite;
+}
+.header-greetings-gamedev_label-straight_line {
+  color: red;
+  animation: fadeInOut 0.5s ease-in-out infinite;
+}/*# sourceMappingURL=appHeader.css.map */

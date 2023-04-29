@@ -1,0 +1,24 @@
+.companies-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  text-align: center;
+}
+.companies-list-item {
+  display: inline-block;
+  font-family: "Roboto";
+  cursor: pointer;
+  border-bottom: 5px #d9d9d9 solid;
+  transition: 0.2s all;
+}
+.companies-list .companies-list-item:hover {
+  font-family: "Roboto";
+  cursor: pointer;
+  border-bottom: 5px #fcc7c3 solid;
+}
+.companies-list .companies-list-item_active {
+  border-bottom: 5px #8884d8 solid;
+  font-family: "Roboto";
+  cursor: pointer;
+}/*# sourceMappingURL=availableCompanies.css.map */

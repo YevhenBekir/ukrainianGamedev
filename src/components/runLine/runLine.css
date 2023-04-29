@@ -1,0 +1,58 @@
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  40% {
+    transform: translateX(-100%);
+  }
+  60% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes skeleton-animation {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #ef98a7;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+.run_line {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: marquee 30s linear infinite;
+}
+.run_line-scale {
+  animation: fadeInOut 2s steps(1) infinite;
+  color: #0b12fa;
+}
+.run_line-projects {
+  animation: fadeInOut 1.7s steps(5) infinite;
+  color: #0b12fa;
+}
+.run_line-development {
+  animation: fadeInOut 3s steps(3) infinite;
+  color: #0b12fa;
+}/*# sourceMappingURL=runLine.css.map */

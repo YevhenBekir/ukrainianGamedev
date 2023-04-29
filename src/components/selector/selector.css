@@ -1,0 +1,66 @@
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  40% {
+    transform: translateX(-100%);
+  }
+  60% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes skeleton-animation {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #ef98a7;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+.circle {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(239, 152, 167, 0.3803921569);
+  border-radius: 100%;
+  transition: all 0.1s;
+}
+
+.circle::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  background-color: #f7bea9;
+  animation: fadeInOut 2.5s ease-in-out infinite;
+}
+
+.circle:hover {
+  background-color: rgba(102, 64, 70, 0.3803921569);
+}
+
+.circle:active {
+  background-color: rgba(221, 14, 45, 0.5960784314);
+}/*# sourceMappingURL=selector.css.map */

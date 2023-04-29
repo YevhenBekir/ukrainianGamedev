@@ -1,0 +1,301 @@
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  40% {
+    transform: translateX(-100%);
+  }
+  60% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes skeleton-animation {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #ef98a7;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+.skeleton_company {
+  background-color: #fcc7c3;
+  width: 100%;
+  min-height: 300px;
+  padding: 50px 150px;
+  margin-top: 50px;
+  box-shadow: 0px -25px 25px 15px #fcc7c3;
+  opacity: 0.8;
+}
+.skeleton_company-carousel {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.skeleton_company-carousel-item {
+  display: block;
+  width: 230px;
+  height: 150px;
+  border-radius: 20px;
+  animation: skeleton-animation 2.5s infinite;
+}
+.skeleton_company-carousel-item-mid {
+  display: block;
+  width: 350px;
+  height: 230px;
+  border-radius: 20px;
+  background-color: transparent;
+  animation: skeleton-animation 2.5s infinite;
+}
+.skeleton_company-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+.skeleton_company-info-initials {
+  width: 600px;
+}
+.skeleton_company-info-initials-name {
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 10px;
+  animation: skeleton-animation 2.5s infinite;
+}
+.skeleton_company-info-initials-desc {
+  width: 100%;
+  height: 190px;
+  background-color: transparent;
+  border-radius: 10px;
+  animation: skeleton-animation 2.5s infinite;
+  margin-top: 30px;
+}
+.skeleton_company-info-projects {
+  margin-top: 85px;
+}
+.skeleton_company-info-projects-item {
+  margin-top: 10px;
+  width: 300px;
+  height: 15px;
+  background-color: transparent;
+  border-radius: 5px;
+  animation: skeleton-animation 2.5s infinite;
+  margin-top: 15px;
+}
+.skeleton_company-info-projects-item:first-child {
+  margin-top: 0;
+}
+.skeleton_company-details {
+  display: flex;
+  width: 57%;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.skeleton_company-details-link {
+  margin-top: 10px;
+  width: 250px;
+  height: 15px;
+  background-color: transparent;
+  border-radius: 5px;
+  animation: skeleton-animation 2.5s infinite;
+}
+.skeleton_company-details-link:hover {
+  color: #5f4545;
+}
+.skeleton_company-details-employees {
+  margin-top: 10px;
+  width: 180px;
+  height: 15px;
+  background-color: transparent;
+  border-radius: 5px;
+  animation: skeleton-animation 2.5s infinite;
+}
+
+@media (max-width: 1200px) {
+  .skeleton_company-info-projects-item {
+    width: 250px;
+  }
+  .skeleton_company-info-initials-desc {
+    width: 80%;
+    height: 190px;
+  }
+  .skeleton_company-info-initials-name {
+    width: 80%;
+    height: 30px;
+  }
+  .skeleton_company-details {
+    display: flex;
+    width: 53%;
+  }
+}
+@media (max-width: 1000px) {
+  .skeleton_company-carousel-item {
+    width: 180px;
+    height: 130px;
+  }
+  .skeleton_company-carousel-item-mid {
+    width: 250px;
+    height: 200px;
+  }
+  .skeleton_company-info-initials-desc {
+    width: 80%;
+    height: 130px;
+  }
+  .skeleton_company-info-initials-name {
+    width: 80%;
+    height: 20px;
+  }
+  .skeleton_company-info-projects-item {
+    margin-top: 10px;
+    height: 15px;
+    margin-top: 10px;
+  }
+  .skeleton_company-info-projects {
+    margin-top: 55px;
+  }
+  .skeleton_company-details-link {
+    width: 155px;
+    height: 15px;
+  }
+  .skeleton_company-details-employees {
+    width: 115px;
+    height: 15px;
+  }
+  .skeleton_company-details {
+    width: 51%;
+  }
+}
+@media (max-width: 900px) {
+  .skeleton_company-carousel-item {
+    width: 135px;
+    height: 98px;
+  }
+  .skeleton_company-carousel-item-mid {
+    width: 204px;
+    height: 134px;
+  }
+  .skeleton_company {
+    width: 100%;
+    padding: 50px 113px;
+  }
+  .skeleton_company-info-projects-item {
+    width: 175px;
+    height: 13px;
+  }
+  .skeleton_company-info-initials-desc {
+    width: 70%;
+    height: 100px;
+  }
+  .skeleton_company-info-initials-name {
+    width: 70%;
+    height: 15px;
+  }
+  .skeleton_company-details {
+    width: 47%;
+  }
+  .skeleton_company-details-link {
+    width: 112px;
+    height: 13px;
+  }
+  .skeleton_company-details-employees {
+    width: 84px;
+    height: 13px;
+  }
+}
+@media (max-width: 650px) {
+  .skeleton_company {
+    width: 100%;
+    padding: 50px 80px;
+  }
+  .skeleton_company-carousel-item-mid {
+    width: 150px;
+    height: 117px;
+  }
+  .skeleton_company-carousel-item {
+    width: 117px;
+    height: 85px;
+  }
+  .skeleton_company-info-initials-desc {
+    width: 70%;
+    height: 59px;
+  }
+  .skeleton_company-details {
+    width: 40%;
+  }
+  .skeleton_company-details-link {
+    width: 87px;
+    height: 13px;
+  }
+  .skeleton_company-details-employees {
+    width: 52px;
+    height: 13px;
+  }
+  .skeleton_company-info-projects-item {
+    width: 134px;
+    height: 10px;
+    margin-top: 7px;
+  }
+  .skeleton_company-info-projects {
+    margin-top: 25px;
+  }
+}
+@media (max-width: 500px) {
+  .skeleton_company {
+    width: 100%;
+    padding: 50px 61px;
+  }
+  .skeleton_company-carousel-item {
+    width: 103px;
+    height: 86px;
+  }
+  .skeleton_company-carousel-item-mid {
+    width: 125px;
+    height: 110px;
+  }
+  .skeleton_company-info-projects-item {
+    width: 112px;
+    height: 10px;
+    margin-top: 7px;
+  }
+}
+@media (max-width: 400px) {
+  .skeleton_company {
+    width: 100%;
+    padding: 50px 18px;
+  }
+  .skeleton_company-carousel-item {
+    width: 90px;
+    height: 70px;
+  }
+  .skeleton_company-carousel-item-mid {
+    width: 116px;
+    height: 93px;
+  }
+  .skeleton_company-info-initials-desc {
+    width: 80%;
+    height: 59px;
+  }
+  .skeleton_company-info-initials-name {
+    width: 80%;
+    height: 15px;
+  }
+  .skeleton_company-details {
+    width: 55%;
+  }
+}/*# sourceMappingURL=skeletonCompanyCard.css.map */

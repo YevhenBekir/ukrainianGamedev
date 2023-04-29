@@ -1,0 +1,232 @@
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  40% {
+    transform: translateX(-100%);
+  }
+  60% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes skeleton-animation {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #ef98a7;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+.select-title {
+  text-align: center;
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.select-city {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  animation: skeleton-animation 2.5s infinite;
+}
+.select-city .arrow {
+  margin-right: 20px;
+}
+
+.map_regions_stats {
+  margin-top: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.map_regions_stats-map {
+  position: relative;
+}
+.map_regions_stats-map-ua_map {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  width: 100%;
+}
+.map_regions_stats-vertical_line {
+  height: 300px;
+  width: 1px;
+  background-color: #000;
+  margin-left: 30px;
+}
+
+.kyiv-selector {
+  position: absolute;
+  top: 23%;
+  left: 45%;
+}
+
+.lviv-selector {
+  position: absolute;
+  top: 31%;
+  left: 8%;
+}
+
+.rivne-selector {
+  position: absolute;
+  top: 21%;
+  left: 21%;
+}
+
+.kharkiv-selector {
+  position: absolute;
+  top: 33%;
+  left: 77%;
+}
+
+.dnipro-selector {
+  position: absolute;
+  top: 49%;
+  left: 69%;
+}
+
+.odesa-selector {
+  position: absolute;
+  top: 70%;
+  left: 45%;
+}
+
+.vinnytsia-selector {
+  position: absolute;
+  top: 41.7%;
+  left: 36.7%;
+}
+
+.frankivsk-selector {
+  position: absolute;
+  top: 41%;
+  left: 11.7%;
+}
+
+@media (max-width: 650px) {
+  .kyiv-selector {
+    top: 22%;
+    left: 44%;
+  }
+  .rivne-selector {
+    top: 21%;
+    left: 19%;
+  }
+  .lviv-selector {
+    top: 31%;
+    left: 7%;
+  }
+  .frankivsk-selector {
+    top: 41%;
+    left: 10.7%;
+  }
+  .vinnytsia-selector {
+    top: 41.7%;
+    left: 35.7%;
+  }
+  .odesa-selector {
+    top: 69%;
+    left: 44%;
+  }
+  .kharkiv-selector {
+    top: 33%;
+    left: 76%;
+  }
+  .dnipro-selector {
+    top: 48%;
+    left: 67%;
+  }
+}
+@media (max-width: 500px) {
+  .kyiv-selector {
+    top: 21%;
+    left: 43%;
+  }
+  .rivne-selector {
+    top: 20%;
+    left: 18%;
+  }
+  .lviv-selector {
+    top: 29%;
+    left: 7%;
+  }
+  .frankivsk-selector {
+    top: 40%;
+    left: 9.7%;
+  }
+  .vinnytsia-selector {
+    top: 40.7%;
+    left: 34.7%;
+  }
+  .odesa-selector {
+    top: 68%;
+    left: 43%;
+  }
+  .kharkiv-selector {
+    top: 32%;
+    left: 74%;
+  }
+  .dnipro-selector {
+    top: 47%;
+    left: 66%;
+  }
+}
+@media (max-width: 400px) {
+  .kyiv-selector {
+    top: 20%;
+    left: 42.5%;
+  }
+  .rivne-selector {
+    top: 19%;
+    left: 17.5%;
+  }
+  .lviv-selector {
+    top: 28%;
+    left: 5.5%;
+  }
+  .frankivsk-selector {
+    top: 39%;
+    left: 8.9%;
+  }
+  .vinnytsia-selector {
+    top: 38%;
+    left: 33%;
+  }
+  .odesa-selector {
+    top: 66%;
+    left: 42.5%;
+  }
+  .kharkiv-selector {
+    top: 30%;
+    left: 73%;
+  }
+  .dnipro-selector {
+    top: 46%;
+    left: 65.6%;
+  }
+}/*# sourceMappingURL=selectRegion.css.map */
