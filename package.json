@@ -29,6 +29,7 @@
   },
   "scripts": {
     "start": "node server.js",
+    "dev": "json-server --watch db.json --port 8000 & react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject"
   },
