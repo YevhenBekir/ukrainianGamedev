@@ -4,11 +4,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@emotion/react": "^11.10.6",
-    "@emotion/styled": "^11.10.6",
-    "@mui/material": "^5.12.1",
-    "@nivo/core": "^0.80.0",
-    "@nivo/pie": "^0.80.0",
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -29,7 +24,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "concurrently \"react-scripts start\" \"npx json-server db.json --port 3001\"",
     "build": "react-scripts build",
     "eject": "react-scripts eject"
   },

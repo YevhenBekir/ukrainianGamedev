@@ -4,9 +4,7 @@ const useCompaniesRequest = () => {
   const { request } = useHttp();
 
   const getCompanies = async (city) => {
-    const response = await request(
-      `https://ua-gamedev.herokuapp.com/db.json/cityCompanies`
-    );
+    const response = await request(`http://localhost:3001/cityCompanies`);
     return transformCompanies(response, city);
   };
 
