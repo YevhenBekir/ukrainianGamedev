@@ -43,6 +43,19 @@ const SelectRegion = (props) => {
     );
   };
 
+  const sizeCondition = () => {
+    if (widthSize >= 1200) return "30px";
+    else if (widthSize >= 1100) return "28px";
+    else if (widthSize >= 1000) return "26px";
+    else if (widthSize >= 900) return "24px";
+    else if (widthSize >= 800) return "22px";
+    else if (widthSize >= 700) return "20px";
+    else if (widthSize >= 600) return "18px";
+    else if (widthSize >= 500) return "16px";
+    else if (widthSize >= 400) return "14px";
+    else if (widthSize < 400) return "12px";
+  };
+
   const renderInfog = () => {
     if (widthSize <= 1200) {
       return;
@@ -89,7 +102,7 @@ const SelectRegion = (props) => {
               key="kyiv"
               id="kyiv"
               className="kyiv-selector"
-              size="30px"
+              size={sizeCondition()}
               onSetCityCompaniesToState={(e) => dispatch(companiesFetch(e))}
               onSetCityNameToInfographic={(e) => setCity(e)}
             />
@@ -99,7 +112,7 @@ const SelectRegion = (props) => {
               key="lviv"
               id="lviv"
               className="lviv-selector"
-              size="39px"
+              size={sizeCondition()}
               onSetCityCompaniesToState={(e) => dispatch(companiesFetch(e))}
               onSetCityNameToInfographic={(e) => setCity(e)}
             />
@@ -109,7 +122,7 @@ const SelectRegion = (props) => {
               key="rivne"
               id="rivne"
               className="rivne-selector"
-              size="29px"
+              size={sizeCondition()}
               onSetCityCompaniesToState={(e) => dispatch(companiesFetch(e))}
               onSetCityNameToInfographic={(e) => setCity(e)}
             />
@@ -119,7 +132,7 @@ const SelectRegion = (props) => {
               key="kharkiv"
               id="kharkiv"
               className="kharkiv-selector"
-              size="45px"
+              size={sizeCondition()}
               onSetCityCompaniesToState={(e) => dispatch(companiesFetch(e))}
               onSetCityNameToInfographic={(e) => setCity(e)}
             />
@@ -129,7 +142,7 @@ const SelectRegion = (props) => {
               key="dnipro"
               id="dnipro"
               className="dnipro-selector"
-              size="35px"
+              size={sizeCondition()}
               onSetCityCompaniesToState={(e) => dispatch(companiesFetch(e))}
               onSetCityNameToInfographic={(e) => setCity(e)}
             />
@@ -139,7 +152,7 @@ const SelectRegion = (props) => {
               key="odesa"
               id="odesa"
               className="odesa-selector"
-              size="33px"
+              size={sizeCondition()}
               onSetCityCompaniesToState={(e) => dispatch(companiesFetch(e))}
               onSetCityNameToInfographic={(e) => setCity(e)}
             />
@@ -149,7 +162,7 @@ const SelectRegion = (props) => {
               key="vinnytsia"
               id="vinnytsia"
               className="vinnytsia-selector"
-              size="33px"
+              size={sizeCondition()}
               onSetCityCompaniesToState={(e) => dispatch(companiesFetch(e))}
               onSetCityNameToInfographic={(e) => setCity(e)}
             />
@@ -159,7 +172,7 @@ const SelectRegion = (props) => {
               key="frankivsk"
               id="frankivsk"
               className="frankivsk-selector"
-              size="31px"
+              size={sizeCondition()}
               onSetCityCompaniesToState={(e) => dispatch(companiesFetch(e))}
               onSetCityNameToInfographic={(e) => setCity(e)}
             />
