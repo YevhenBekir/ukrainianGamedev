@@ -3,16 +3,7 @@ import "./skeletonCompanyCard.scss";
 const SkeletonCompanyCard = () => {
   return (
     <div className="skeleton_company">
-      <div
-        className="skeleton_company-title"
-        style={{
-          fontSize: "18px",
-          fontWeight: 300,
-          textAlign: "center",
-          marginBottom: "15px",
-          fontFamily: "Roboto Mono",
-        }}
-      >
+      <div className="skeleton_company-title">
         БУДЬ ЛАСКА, ОБЕРІТЬ МІСТО ТА КОМПАНІЮ
       </div>
       <div className="skeleton_company-carousel">

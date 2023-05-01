@@ -8,6 +8,13 @@
   margin-top: 50px;
   box-shadow: 0px -25px 25px 15px #fcc7c3;
   opacity: 0.8;
+  &-title {
+    font-size: "18px";
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: "Roboto Mono";
+  }
   &-carousel {
     display: flex;
     justify-content: space-around;
@@ -221,6 +228,9 @@
   .skeleton_company-info-projects {
     margin-top: 25px;
   }
+  .skeleton_company-title {
+    font-size: 15px;
+  }
 }
 @media (max-width: 500px) {
   .skeleton_company {
@@ -239,6 +249,9 @@
     width: 112px;
     height: 10px;
     margin-top: 7px;
+  }
+  .skeleton_company-title {
+    font-size: 12px;
   }
 }
 @media (max-width: 400px) {
@@ -264,5 +277,8 @@
   }
   .skeleton_company-details {
     width: 55%;
+  }
+  .skeleton_company-title {
+    font-size: 10px;
   }
 }

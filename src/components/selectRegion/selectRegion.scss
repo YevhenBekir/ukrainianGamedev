@@ -151,6 +151,13 @@
     top: 49%;
     left: 68%;
   }
+  .select-title {
+    text-align: center;
+    font-family: "Roboto Mono";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+  }
 }
 @media (max-width: 400px) {
   .kyiv-selector {
@@ -184,5 +191,12 @@
   .dnipro-selector {
     top: 48%;
     left: 68.5%;
+  }
+  .select-title {
+    text-align: center;
+    font-family: "Roboto Mono";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
   }
 }

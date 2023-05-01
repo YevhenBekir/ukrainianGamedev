@@ -59,8 +59,8 @@ export default function BarInfo() {
     else if (widthSize >= 700) return 600;
     else if (widthSize >= 600) return 500;
     else if (widthSize >= 500) return 400;
-    else if (widthSize >= 400) return 300;
-    else if (widthSize < 400) return 200;
+    else if (widthSize >= 400) return 350;
+    else if (widthSize < 400) return 325;
   };
 
   return (

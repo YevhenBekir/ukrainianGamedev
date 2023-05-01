@@ -20,3 +20,19 @@
     color: #0b12fa;
   }
 }
+
+@media (max-width: 650px) {
+  .run_line {
+    font-size: 15px;
+  }
+}
+@media (max-width: 500px) {
+  .run_line {
+    font-size: 13px;
+  }
+}
+@media (max-width: 400px) {
+  .run_line {
+    font-size: 10px;
+  }
+}

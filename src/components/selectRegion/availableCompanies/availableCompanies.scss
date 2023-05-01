@@ -11,6 +11,14 @@
     border-bottom: 5px #d9d9d9 solid;
     transition: 0.2s all;
   }
+  &-item_active {
+    display: inline-block;
+    font-family: "Roboto";
+    font-weight: 700;
+    cursor: pointer;
+    border-bottom: 5px #d9d9d9 solid;
+    transition: 0.2s all;
+  }
   .companies-list-item:hover {
     font-family: "Roboto";
     cursor: pointer;
@@ -20,5 +28,30 @@
     border-bottom: 5px #8884d8 solid;
     font-family: "Roboto";
     cursor: pointer;
+  }
+}
+
+@media (max-width: 650px) {
+  .companies-list-item {
+    font-size: 13px;
+  }
+  .companies-list-item_active {
+    font-size: 13px;
+  }
+}
+@media (max-width: 500px) {
+  .companies-list-item {
+    font-size: 11px;
+  }
+  .companies-list-item_active {
+    font-size: 11px;
+  }
+}
+@media (max-width: 400px) {
+  .companies-list-item {
+    font-size: 10px;
+  }
+  .companies-list-item_active {
+    font-size: 10px;
   }
 }
