@@ -10,7 +10,7 @@ export const allCompaniesFetch = createAsyncThunk(
   "infographic/allCompaniesFetch",
   async () => {
     const { request } = useHttp();
-    return await request("http://localhost:3001/cityCompanies");
+    return await request("http://168.119.50.224:3001/cityCompanies");
   }
 );
 
