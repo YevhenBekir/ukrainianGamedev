@@ -4,7 +4,7 @@ const useCompaniesRequest = () => {
   const { request } = useHttp();
 
   const getCompanies = async (city) => {
-    const response = await request(`http://168.119.50.224:3001/cityCompanies`);
+    const response = await request(`http://localhost:3001/cityCompanies`);
     return transformCompanies(response, city);
   };
 
